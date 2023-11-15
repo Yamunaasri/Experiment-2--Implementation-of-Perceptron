@@ -49,7 +49,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-
+```
+```
 class Perceptron:
     def __init__(self,learning_rate=0.1):
         self.learning_rate = learning_rate
@@ -73,7 +74,8 @@ class Perceptron:
         return np.dot(x, self._w) + self._b
     def predict(self, x: np.array):
         return np.where(self.f(x) >= 0,1,-1)
-
+```
+```
 df = pd.read_csv('IRIS.csv')
 print(df.head())
 # extract the label column
